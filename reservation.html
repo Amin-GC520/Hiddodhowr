@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiddo Dhowr Somali Music Village</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+  
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Hiddo Dhowr</h1>
+                <p>Somali Music Village</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-main">
+        <section class="reservation-hero">
+            <h2>Book Your Table</h2>
+            <p>Reserve your spot for our live music nights</p>
+        </section>
+
+        <section class="reservation-form-container">
+            <form id="reservation-form" class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <select id="date" name="date" required>
+                        <option value="">Select a date</option>
+                        <option value="friday">Friday Night (Music Performance)</option>
+                        <option value="saturday">Saturday Night (Music Performance)</option>
+                        <option value="other">Other Day (No Music)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Number of guests</option>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8+">8+ people (Special arrangement)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special">Special Requests</label>
+                    <textarea id="special" name="special" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the <a href="#">privacy policy</a> and terms of service</label>
+                </div>
+                
+                <button type="submit" class="btn">Submit Reservation</button>
+            </form>
+            
+            <div class="reservation-info">
+                <h3>Reservation Details</h3>
+                <p>Our live music performances are held every Friday and Saturday night from 8 PM to midnight.</p>
+                <p>For groups larger than 8 people, please call us directly at +252 61 123 4567.</p>
+                <p>We recommend booking at least 3 days in advance for music nights as they often sell out.</p>
+                
+                <h3>Cancellation Policy</h3>
+                <p>Please notify us at least 24 hours in advance if you need to cancel or change your reservation.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Wednesday - Monday: 5 PM - 11 PM</p>
+                <p>Friday & Saturday: Live Music 8 PM - 12 AM</p>
+                <p>Tuesday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>123 Cultural District</p>
+                <p>Hergeisa, Somaliland</p>
+                <p>Phone: +252 63 681 4543</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Hiddo Dhowr Somali Music Village. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
